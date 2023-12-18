@@ -2,26 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+  :root {
+    --blue-50: #eaf1f3;
+    --blue-100: #bfd2d9;
+    --blue-200: #a0bcc6;
+    --blue-300: #759ead;
+    --blue-400: #5a8b9d;
+    --blue-500: #316e84;
+    --blue-600: #2d6478;
+    --blue-700: #234e5e;
+    --blue-800: #1b3d49;
+    --blue-900: #152e37;
+
+    --white: #ffffff;
+    --grey-50: #ebeded;
+    --grey-100: #bfc6c8;
+    --grey-200: #a1aaae;
+    --grey-300: #768388;
+    --grey-400: #5b6b71;
+    --grey-500: #32464e;
+    --grey-600: #2e4047;
+    --grey-700: #243237;
+    --grey-800: #1c272b;
+    --grey-900: #151d21;
+    --black: #000000;
+
+    --yellow-50: #fffde6;
+    --yellow-100: #fefab1;
+    --yellow-200: #fef78c;
+    --yellow-300: #fef457;
+    --yellow-400: #fdf136;
+    --yellow-500: #fdee04;
+    --yellow-600: #e6d904;
+    --yellow-700: #b4a903;
+    --yellow-800: #8b8302;
+    --yellow-900: #6a6402;
+
+    --red-50: #ffe9e9;
+    --red-100: #febcbc;
+    --red-200: #fe9b9b;
+    --red-300: #fe6e6e;
+    --red-400: #fd5151;
+    --red-500: #fd2626;
+    --red-600: #e62323;
+    --red-700: #b41b1b;
+    --red-800: #8b1515;
+    --red-900: #6a1010;
+
+    --green-50: #e8f6eb;
+    --green-100: #b9e3c2;
+    --green-200: #97d6a4;
+    --green-300: #68c37b;
+    --green-400: #4ab761;
+    --green-500: #1da53a;
+    --green-600: #1a9635;
+    --green-700: #157529;
+    --green-800: #105b20;
+    --green-900: #0c4518;
+  }
+
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background: #000000;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: var(--blue-300);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
 }
